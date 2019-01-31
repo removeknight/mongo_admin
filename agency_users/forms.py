@@ -5,3 +5,8 @@ class GenerateRandomUserForm(forms.Form):
     total = forms.IntegerField(
         validators=[MinValueValidator(50), MaxValueValidator(500)]
     )
+
+class GenerateRandomAgencyForm(forms.Form):
+    total = forms.IntegerField(
+        validators=[MinValueValidator(10), MaxValueValidator(20)]
+    )

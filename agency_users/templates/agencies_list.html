@@ -5,10 +5,10 @@
     <title>Title</title>
 </head>
 <body>
-<a href="/run_checks/generate_users/">GENERATE USERS</a>
-    <h1>All Users</h1>
-    {% for user in all_users %}
-    <p>{{user.name}}</p>
+
+    <h1>All Agencies</h1>
+    {% for agency in all_agencies %}
+    <p>{{agency.name}} - {{agency.location_code}}</p>
     {% endfor %}
 </body>
 </html>

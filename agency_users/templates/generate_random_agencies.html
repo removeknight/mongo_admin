@@ -1,0 +1,6 @@
+<form action="/agency_users/generate_agencies/" method="post">
+    {% csrf_token %}
+    <h1>Generate Agency</h1>
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
